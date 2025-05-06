@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Database
+instance/database.db
+
+# Env file
+.env
+
+# Node.js (frontend)
+frontend/node_modules/
+frontend/build/
