@@ -2,6 +2,7 @@
 # Music App
 
 This is a music player application where users can create playlists, add songs, and manage their personal music library. The frontend is built with React and the backend is developed using Flask.
+I developed this app as a project for my course of "Tecnologie Web" at Unimore.
 
 ## Features
 
