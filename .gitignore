@@ -7,8 +7,6 @@ __pycache__/
 # Database
 instance/database.db
 
-# Env file
-.env
 
 # Node.js (frontend)
 frontend/node_modules/
