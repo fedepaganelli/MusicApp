@@ -36,6 +36,7 @@ Before running the project, you need to have the following software installed:
    ```bash
    pip install -r requirements.txt
    ```
+   I recommend using a virtual environment to manage your Python packages.
 
 2. Navigate to the `backend` directory:
    ```bash
