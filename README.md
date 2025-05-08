@@ -31,17 +31,18 @@ Before running the project, you need to have the following software installed:
 
 ### Backend Setup
 
-1. Navigate to the `backend` directory:
-   ```bash
-   cd backend
-   ```
 
-2. Install the required dependencies:
+1. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Set environment variables (e.g., `JWT_SECRET_KEY`) for the Flask app.
+2. Navigate to the `backend` directory:
+   ```bash
+   cd backend
+   ```
+   
+3. Set environment variables (e.g., `JWT_SECRET_KEY` in the .env file) for the Flask app.
 
 4. Run the Flask server:
    ```bash
@@ -79,6 +80,8 @@ npm run build
 
 This will create an optimized production build in the `build/` directory.
 You can then serve the static files using a web server or integrate it with the Flask backend.
+
+If you do this, you can just use the "python run.py" command to run the backend and the frontend will be served by Flask.
 
 ## Folder Structure
 
