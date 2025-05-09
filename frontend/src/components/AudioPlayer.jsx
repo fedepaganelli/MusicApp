@@ -8,7 +8,7 @@ const AudioPlayer = ({ currentSong, isPlaying, onPlayPause, volume, onVolumeChan
             audioRef.current.src = currentSong.preview_url;
             audioRef.current.play().catch(err => console.error("Errore nella riproduzione:", err));
         }
-    }, [currentSong]);
+    }, [currentSong, audioRef]);
 
     // to handle the play/pause functionality
     useEffect(() => {
@@ -18,14 +18,14 @@ const AudioPlayer = ({ currentSong, isPlaying, onPlayPause, volume, onVolumeChan
         } else {
             audioRef.current.pause();
         }
-    }, [isPlaying]);
+    }, [isPlaying, audioRef]);
 
 
     useEffect(() => {
         if (audioRef.current) {
             audioRef.current.volume = volume;
         }
-    }, [volume]);
+    }, [volume, audioRef]);
 
     return currentSong ? (
         <div className="fixed-bottom bg-dark bg-opacity-75 text-white p-3">

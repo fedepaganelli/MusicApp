@@ -26,7 +26,7 @@ const Home = ({onPlaySong}) => {
             onPlaySong(song);
             localStorage.removeItem("selectedSong");
         }
-    }, []);
+    }, [onPlaySong]);
 
 
     const fetchPlaylists = async () => {
