@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 
 const AudioPlayer = ({ currentSong, isPlaying, onPlayPause, volume, onVolumeChange, audioRef }) => {
-
+    const token= localStorage.getItem("token");
 
     useEffect(() => {
         if (audioRef.current && currentSong?.preview_url) {
@@ -26,6 +26,8 @@ const AudioPlayer = ({ currentSong, isPlaying, onPlayPause, volume, onVolumeChan
             audioRef.current.volume = volume;
         }
     }, [volume, audioRef]);
+
+    if (!token || !currentSong) return null;
 
     return currentSong ? (
         <div className="fixed-bottom bg-dark bg-opacity-75 text-white p-3">
